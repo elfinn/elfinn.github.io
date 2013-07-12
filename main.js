@@ -12,7 +12,7 @@ jQuery(function($) {
   var photos = $('#photos');
   function addPhoto(photo) {
     var photoSrc = photo['photo-url-500'];
-    var photoEl = $('<a href="//elfinnflight.com/tagged/photos"><img src="' + photoSrc + '"></a>');
+    var photoEl = $('<a href="//blog.elfinnflight.com/tagged/photos"><img src="' + photoSrc + '"></a>');
     photos.append(photoEl);
   }
   photoPosts.forEach(function(fp) {
@@ -49,7 +49,7 @@ jQuery(function($) {
     '</div>'))
     .append($(
       '<div class="textlinks">' +
-        '<a href="//elfinnflight.com/tagged/text">Text posts</a>' +
+        '<a href="//blog.elfinnflight.com/tagged/text">Text posts</a>' +
         '<a href="' + ft['url-with-slug'] + '">This post</a>' +
       '</div>'));
 });
